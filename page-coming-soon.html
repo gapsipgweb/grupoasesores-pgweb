@@ -1,0 +1,218 @@
+<?php
+"$_GET []":$pagina = $_GET['fragment'];
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<title>Próximamente - GAPSI</title>	
+        <link rel="icon" href="img/Logo2.ico" type="image/x-icon">
+    	<link rel="shortcut icon" href="img/Logo2.ico" type="image/x-icon"/>			
+		<meta name="keywords" content="HTML5 Template" />
+		<meta name="description" content="Porto - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/bootstrap.css">
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+		<link rel="stylesheet" href="css/theme-animate.css">
+
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" href="vendor/rs-plugin/css/settings.css" media="screen">
+		<link rel="stylesheet" href="vendor/circle-flip-slideshow/css/component.css" media="screen">
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skins/default.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr/modernizr.js"></script>
+		<script src="vendor/jquery/jquery-2.1.3.min.js"></script>
+		<script type='text/javascript'>
+			//agregar el nombre de la página según el Hash que tenga la URL
+			window.onload=function(){		
+
+			document.getElementById('message').value=window.location.hash.substring(1);
+			document.getElementById('proximapag1').innerHTML=window.location.hash.substring(1);
+			document.getElementById('proximapag2').innerHTML=window.location.hash.substring(1);
+
+			//var  $( '#message' ).value().substring(1);
+
+			}
+			//cargar página cuando haya cambio de HASH
+			window.onhashchange=function(){
+				window.location.reload();
+			}
+		</script>
+
+		<script>
+		var completeHeader = false;
+		var completeFooter = false;
+		
+		function loadScripts() {
+			$.getScript( "js/theme.js", function( data, textStatus, jqxhr ) {
+				$.getScript( "js/theme.init.js");
+			});
+		}
+		
+		$(function() {
+			
+			$.get("header.html #header", function(data) {
+				$("#header").replaceWith(data);
+			});
+
+			$.get("footer.html #footer", function(data) {
+				$("#footer").replaceWith(data);
+			});
+			
+			
+		});
+		</script>
+
+
+	</head>
+	<body>
+
+		<div class="body coming-soon">
+			<div id="header"></div>
+			<div role="main" class="main">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<hr class="tall">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 center">
+							<h1 class="short small">Nuestra p&aacutegina "<span id="proximapag1"></span>" ser&aacute publicada próximamente.</h1>
+							<p class="short lead">Estamos trabajando para ofrecerte una mejor experiencia de usuario.</p>
+							<p>En breve toda la información sobre nuestra compañía estar&aacute disponible.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<hr class="tall">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3">
+							<div class="progress-bars">
+								<div class="progress-label">
+									<span><strong>Concepción:</strong> Casi finalizada</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar progress-bar-primary" data-appear-progress-animation="90%">
+										<span class="progress-bar-tooltip">90%</span>
+									</div>
+								</div>
+								<div class="progress-label">
+									<span><strong>Diseño:</strong> Nuevas mejoras en camino</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar progress-bar-primary" data-appear-progress-animation="60%" data-appear-animation-delay="300">
+										<span class="progress-bar-tooltip">60%</span>
+									</div>
+								</div>
+								<div class="progress-label">
+									<span><strong>Desarrollo:</strong> Iniciando</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar progress-bar-primary" data-appear-progress-animation="35%" data-appear-animation-delay="600">
+										<span class="progress-bar-tooltip">35%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<hr class="tall">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3">
+							
+
+							<h5>Me gustaría ser notificado cuando la página "<span id="proximapag2"></span>" esté terminada.</h5>
+
+
+								<div class="alert alert-success hidden" id="contactSuccess">
+								<strong>¡Éxito!</strong> Tu correo ha sido registrado, te informaremos al momento de publicar esta sección de nuestra página web.
+								</div>
+
+								<div class="alert alert-danger hidden" id="contactError">
+								<strong>¡Error!</strong> Oops, hubo un error al procesar la solicitud.
+								</div>
+							<form id="contactForm" action="php/contact-form.php" method="POST">
+										<input type="text" style="display: none" value="Página proximamente" class="form-control" name="name" id="name">
+										<input type="text" style="display: none" value="Me gustaría ser informado cuado liberen el siguiente sitio web:"class="form-control" name="subject" id="subject">
+										<input type="text" style="display: none" class="form-control" name="message" id="message">
+										
+								<div class="input-group">
+										<input type="email" placeholder="Ingresa tu correo electrónico" value="" data-msg-required="Por favor ingresa tu correo electrónico." data-msg-email="Por favor ingrese un correo electrónico válido." class="form-control" name="email" id="email" required>
+									<span class="input-group-btn">
+										<input type="submit" value="Suscribirse" class="btn btn-default" data-loading-text="Loading...">
+									</span>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer"></div>
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/jquery/jquery.js"></script>
+		<script src="vendor/jquery.appear/jquery.appear.js"></script>
+		<script src="vendor/jquery.easing/jquery.easing.js"></script>
+		<script src="vendor/jquery-cookie/jquery-cookie.js"></script>
+		<script src="vendor/bootstrap/bootstrap.js"></script>
+		<script src="vendor/common/common.js"></script>
+		<script src="vendor/jquery.validation/jquery.validation.js"></script>
+		<script src="vendor/jquery.stellar/jquery.stellar.js"></script>
+		<script src="vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js"></script>
+		<script src="vendor/jquery.gmap/jquery.gmap.js"></script>
+		<script src="vendor/isotope/jquery.isotope.js"></script>
+		<script src="vendor/owlcarousel/owl.carousel.js"></script>
+		<script src="vendor/jflickrfeed/jflickrfeed.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		<script src="vendor/vide/vide.js"></script>
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Specific Page Vendor and Views -->
+		<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="vendor/circle-flip-slideshow/js/jquery.flipshow.js"></script>
+		<script src="js/views/view.home.js"></script>
+		<script src="js/views/view.page-coming-soon.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+
+	</body>
+</html>

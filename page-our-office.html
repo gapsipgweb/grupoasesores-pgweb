@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<title>Oficinas - GAPSI</title>
+        <link rel="icon" href="img/Logo2.ico" type="image/x-icon">
+    	<link rel="shortcut icon" href="img/Logo2.ico" type="image/x-icon"/>				
+		<meta name="keywords" content="HTML5 Template" />
+		<meta name="description" content="Porto - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/bootstrap.css">
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+		<link rel="stylesheet" href="css/theme-animate.css">
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skins/default.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr/modernizr.js"></script>
+		<script src="vendor/jquery/jquery-2.1.3.min.js"></script>
+		<script>
+		var completeHeader = false;
+		var completeFooter = false;
+		
+		function loadScripts() {
+			$.getScript( "js/theme.js", function( data, textStatus, jqxhr ) {
+				$.getScript( "js/theme.init.js");
+			});
+		}
+		
+		$(function() {
+			
+			$.get("header.html #header", function(data) {
+				$("#header").replaceWith(data);
+			});
+
+			$.get("footer.html #footer", function(data) {
+				$("#footer").replaceWith(data);
+			});
+			
+			
+		});
+		</script>
+
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+		<!--[if lte IE 8]>
+			<script src="vendor/respond/respond.js"></script>
+			<script src="vendor/excanvas/excanvas.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+
+		<p>&nbsp;</p>
+		<div class="body">
+		  <div id="header"></div>
+			<div role="main" class="main">
+
+				<section class="page-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="breadcrumb">
+									<li><a href="index.html">Home</a></li>
+									<li class="active">Oficinas</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<h1>Nuestras Oficinas</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container">
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="owl-carousel" data-plugin-options='{"items": 1, "animateOut": "fadeOut", "autoplay": true, "autoplayTimeout": 3000}'>
+								<div>
+									<img alt="" class="img-responsive img-rounded" src="img/our-office-1.jpg">
+								</div>
+                                
+                                <div>
+									<img alt="" class="img-responsive img-rounded" src="img/oficinas2.png">
+								</div>
+								<!-- <div>
+									<img alt="" class="img-responsive img-rounded" src="img/our-office-3.jpg">
+								</div> -->
+                                <div>
+									<img alt="" class="img-responsive img-rounded" src="img/ofcinas3.png">
+								</div>
+                                <div>
+									<img alt="" class="img-responsive img-rounded" src="img/oficinas4.png">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr class="tall">
+
+					<div class="row">
+						<div class="col-md-7">
+							<h4>Espacios de creatividad y <strong>productividad</strong></h4>
+							<p class="lead">En GAPSI nos complace ofrecer espacios en el que nuestros clientes, nuestros asociados de negocio y nuestros empleados se sientan bien recibidos.</p>
+
+							<p>Contamos con espacios propicios de trabajo, áreas sociales, salas de capacitación y salas de reuniones para que la experiencia de nuestros visitantes y empleados sea la más agradable. </p>
+
+							<hr class="invisible">
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="feature-box secundary">
+										<div class="feature-box-icon">
+											<i class="fa fa-location-arrow"></i>
+										</div>
+										<div class="feature-box-info">
+											<h4 class="shorter">Más cerca de ti</h4>
+											<p class="tall">Con nuestras sedes ubicadas en México D.F. y Monterrey, Nuevo León, estamos más cerca de nuestros clientes para brindar un servicio oportuno y completo.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="feature-box secundary">
+										<div class="feature-box-icon">
+											<i class="fa fa-graduation-cap"></i>
+										</div>
+										<div class="feature-box-info">
+											<h4 class="shorter">Salas de Juntas y Capacitación</h4>
+											<p class="tall">Contamos con amplias y confortables salas para llevar a cabo juntas de negocios y para brindar capacitaciones a clientes y empleados.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<hr class="invisible">
+
+							<h4>Espacios de <strong>Trabajo</strong></h4>
+
+							<div class="row lightbox" data-plugin-options='{"delegate": "a", "type": "image", "gallery": {"enabled": true}}'>
+								<div class="col-md-4">
+									<a class="img-thumbnail push-bottom" href="img/oficinas4.png" data-plugin-options='{"type":"image"}'>
+										<img class="img-responsive" src="img/oficinas4.png">
+										<span class="zoom">
+											<i class="fa fa-search"></i>
+										</span>
+									</a>
+								</div>
+								<div class="col-md-4">
+									<a class="img-thumbnail push-bottom" href="img/oficinas2.png" data-plugin-options='{"type":"image"}'>
+										<img class="img-responsive" src="img/oficinas2.png">
+										<span class="zoom">
+											<i class="fa fa-search"></i>
+										</span>
+									</a>
+								</div>
+								<!-- <div class="col-md-4">
+									<a class="img-thumbnail push-bottom" href="img/our-office-3.jpg" data-plugin-options='{"type":"image"}'>
+										<img class="img-responsive" src="img/Oficinas/sala-1.png">
+										<span class="zoom">
+											<i class="fa fa-search"></i>
+										</span>
+									</a>
+								</div> -->
+							</div>
+
+						</div>
+						<div class="col-md-5">
+							<h4>Nuestras <strong>Sedes</strong></h4>
+							<!-- agregar el menu selectivo-->
+							<div class="tabs">
+									<ul class="nav nav-tabs nav-justified">
+										<li class="active"><a id="dftab" href="#DF" data-toggle="tab"> D.F., México</a></li>
+										<li><a id="mtytab" href="#MTY" data-toggle="tab">Monterrey, México</a></li>
+										<!-- pestaña de Colombia <li><a id="coltab" href="#COL" data-toggle="tab">Bogotá, Colombia</a></li>-->
+									</ul>
+							<!--agregar el contenido de oficinas y mapas-->
+									<div class="tab-content">
+										<div class="tab-pane active" id="DF">
+											<ul class="simple-post-list">
+												<li id="mapContainerDF">
+													<div id="googlemapsDF" class="google-map small"></div>
+												</li>
+												<li>
+													<h4>Oficinas <strong>D.F., México</strong></h4>
+													</br><i class="fa fa-map-marker"></i> <strong>Dirección:</strong> Cerrada Juan Tinoco #15, Col. Merced Gómez, Del. Alvaro Obregón C.P. 01600, México, D.F.
+													</br><i class="fa fa-phone"></i> <strong>Teléfono:</strong> +52 55 9000.3959
+													</br><i class="fa fa-calendar"></i> <strong>Horario:</strong> Lunes - Viernes 9:00 am a 6:00 pm (Zona centro México)
+													</br><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:contacto@gapsi.com.mx"> contacto@gapsi.com.mx</a>
+													
+												</li>
+											</ul>	
+										</div>
+										<div class="tab-pane" id="MTY">
+											<ul class="simple-post-list">
+												<li id="mapContainerMTY">
+													<div id="googlemapsMTY" class="google-map small"></div>
+												</li>
+												<li>
+													<h4>Oficinas <strong>Monterrey, México</strong></h4>
+													</br><i class="fa fa-map-marker"></i> <strong>Dirección:</strong> Blvd. Diaz Ordaz #130 Torre 3  piso 10 Of. 1016 Col. Santa María Monterrey, N.L. 64650
+													</br><i class="fa fa-phone"></i> <strong>Teléfono:</strong> +52 81 8851.8273
+													</br><i class="fa fa-calendar"></i> <strong>Horario:</strong> Lunes - Viernes 9:00 am a 6:00 pm (Zona centro México)
+													</br><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:contacto@gapsi.com.mx"> contacto@gapsi.com.mx</a>
+												</li>
+											</ul>
+										</div>
+										<!-- oficinas de Colombia <div class="tab-pane" id="COL">
+											<ul class="simple-post-list">
+												<li id="mapContainerCOL">
+													<div id="googlemapsCOL" class="google-map small"></div>
+												</li>
+												<li>
+													<h4>Oficinas <strong>Bogotá, Colombia</strong></h4>
+													</br><i class="fa fa-map-marker"></i> <strong>Dirección:</strong> Carrera 45 A No. 137-59 Bogotá D.C.
+													</br><i class="fa fa-phone"></i> <strong>Teléfono:</strong> +57 1 796.5460
+													</br><i class="fa fa-calendar"></i> <strong>Horario:</strong> Lunes - Viernes 8:00 am a 6:00 pm (Hora Colombia)
+													</br><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:info@gapsi.com.co"> info@gapsi.com.co</a>
+												</li>
+											</ul>
+										</div>-->
+									</div>
+							</div>
+	
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div id="footer"></div>
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/jquery/jquery.js"></script>
+		<script src="vendor/jquery.appear/jquery.appear.js"></script>
+		<script src="vendor/jquery.easing/jquery.easing.js"></script>
+		<script src="vendor/jquery-cookie/jquery-cookie.js"></script>
+		<script src="vendor/bootstrap/bootstrap.js"></script>
+		<script src="vendor/common/common.js"></script>
+		<script src="vendor/jquery.validation/jquery.validation.js"></script>
+		<script src="vendor/jquery.stellar/jquery.stellar.js"></script>
+		<script src="vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js"></script>
+		<script src="vendor/jquery.gmap/jquery.gmap.js"></script>
+		<script src="vendor/isotope/jquery.isotope.js"></script>
+		<script src="vendor/owlcarousel/owl.carousel.js"></script>
+		<script src="vendor/jflickrfeed/jflickrfeed.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		<script src="vendor/vide/vide.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Specific Page Vendor and Views -->
+		<script src="js/views/view.contact.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+		<script>
+			//Load DF map when the page is loaded
+			$( document ).ready(function() {
+				$(window).resize(function(){
+					for (var key in loadedMaps) {
+					  if (loadedMaps.hasOwnProperty(key)) {
+						loadedMaps[key] = false;
+					  }
+					}
+				});
+		 
+				$("#googlemapsDF").gMap(mapSettingsDF);
+
+				var mapRefDF = $("#googlemapsDF").data('gMap.reference');
+				mapRefDF.mapTypes.set('map_style', styledMap);
+		 		mapRefDF.setMapTypeId('map_style');
+				loadedMaps.dfMap = true;
+		 		$("[data-toggle='tab']").on('shown.bs.tab', createOtherMaps);
+
+			});
+			
+			/*
+			Map Settings
+
+				Find the Latitude and Longitude of your address:
+					- http://universimmedia.pagesperso-orange.fr/geo/loc.htm
+					- http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude/
+
+			*/
+			var loadedMaps = {
+				dfMap: false,
+				mtyMap: false,
+				colMap: false
+			};
+			//Información de oficinas del DF
+
+			// Map Markers 
+			var mapMarkersDF = [{
+				address: "19.364451, -99.191740",
+				html: "<strong>GAPSI D.F. </strong><br><a target='_blank' href='https://www.google.com/maps/place/Cerrada+Tinoco+9,+Merced+G%C3%B3mez,+%C3%81lvaro+Obreg%C3%B3n,+01600+Cd+de+M%C3%A9xico,+DF,+M%C3%A9xico/@19.3644411,-99.1917054,17z/data=!3m1!4b1!4m2!3m1!1s0x85d20020c3c17581:0x869dcf66c1919e98'>Ver en Google Maps</a>",
+				icon: {
+					image: "img/pin.png",
+					iconsize: [26, 46],
+					iconanchor: [12, 46]
+				},
+				popup: true
+			}];
+
+			// Map Initial Location
+			var initLatitudeDF = 19.364451;
+			var initLongitudeDF = -99.191740;
+
+			// Map Extended Settings
+			var mapSettingsDF = {
+				controls: {
+					draggable: true,
+					panControl: true,
+					zoomControl: true,
+					mapTypeControl: true,
+					scaleControl: true,
+					streetViewControl: true,
+					overviewMapControl: true
+				},
+				scrollwheel: false,
+				markers: mapMarkersDF,
+				latitude: initLatitudeDF,
+				longitude: initLongitudeDF,
+				zoom: 16
+			}; 
+			
+			//Información de oficinas de Monterrey
+
+			// Map Markers 
+			var mapMarkersMTY = [{
+				address: "25.670632, -100.375733",
+				html: "<strong>GAPSI Monterrey </strong><br><a target='_blank' href='https://goo.gl/maps/Ic3QV'>Ver en Google Maps</a>",
+				icon: {
+					image: "img/pin.png",
+					iconsize: [26, 46],
+					iconanchor: [12, 46]
+				},
+				popup: true 
+			}];
+
+			// Map Initial Location
+			var initLatitudeMTY = 25.670632;
+			var initLongitudeMTY = -100.375733;
+
+			// Map Extended Settings
+			var mapSettingsMTY = {
+				controls: {
+					draggable: true,
+					panControl: true,
+					zoomControl: true,
+					mapTypeControl: true,
+					scaleControl: true,
+					streetViewControl: true,
+					overviewMapControl: true
+				},
+				scrollwheel: false,
+				markers: mapMarkersMTY,
+				latitude: initLatitudeMTY,
+				longitude: initLongitudeMTY,
+				zoom: 16
+			};
+
+			//Información de oficinas de Colombia
+			// Map Markers 
+			var mapMarkersCOL = [{
+				address: "4.722866,-74.051934",
+				html: "<strong>GAPSI Colombia </strong><br><a target='_blank' href='https://goo.gl/maps/TWM6b'>Ver en Google Maps</a>",
+				icon: {
+					image: "img/pin.png",
+					iconsize: [26, 46],
+					iconanchor: [12, 46]
+				},
+				popup: true
+			}];
+
+			// Map Initial Location
+			var initLatitudeCOL = 4.722866;
+			var initLongitudeCOL = -74.051934;
+
+			// Map Extended Settings
+			var mapSettingsCOL = {
+				controls: {
+					draggable: true,
+					panControl: true,
+					zoomControl: true,
+					mapTypeControl: true,
+					scaleControl: true,
+					streetViewControl: true,
+					overviewMapControl: true
+				},
+				scrollwheel: false,
+				markers: mapMarkersCOL,
+				latitude: initLatitudeCOL,
+				longitude: initLongitudeCOL,
+				zoom: 16
+			};
+
+			////// Create an array of styles.
+		 	var mapColor = "#0088cc";
+
+		 	var styles = [{
+		 		stylers: [{
+		 			hue: mapColor
+		 		}]
+		 	}, {
+		 		featureType: "road",
+		 		elementType: "geometry",
+		 		stylers: [{
+		 			lightness: 0
+		 		}, {
+		 			visibility: "simplified"
+		 		}]
+		 	}, {
+		 		featureType: "road",
+		 		elementType: "labels",
+		 		stylers: [{
+		 			visibility: "off"
+		 		}]
+		 	}];
+
+		 	var styledMap = new google.maps.StyledMapType(styles, {
+		 		name: "Styled Map"
+		 	});
+		 	
+		 	//load maps for Monterreey and Colombia
+		 	function createOtherMaps(e){
+				switch($(e.target).attr("id")) {
+					case "dftab":
+						if (!loadedMaps.mtyMap) {
+							loadMap("#googlemapsDF", mapSettingsDF);
+							loadedMaps.dfMap = true;
+						}
+						break;
+					case "mtytab":
+						if (!loadedMaps.mtyMap) {
+							loadMap("#googlemapsMTY", mapSettingsMTY);
+							loadedMaps.mtyMap = true;
+						}
+						break;
+					case "coltab":
+						if (!loadedMaps.colMap) {
+							loadMap("#googlemapsCOL", mapSettingsCOL);
+							loadedMaps.colMap = true;
+						}
+						break;
+					default:
+						break;
+				}	
+		 	}
+			
+			function loadMap(mapId, mapSettings) {
+				$(mapId).gMap(mapSettings);
+				var mapRef = $(mapId).data('gMap.reference');
+				mapRef.mapTypes.set('map_style', styledMap);
+				mapRef.setMapTypeId('map_style');
+				google.maps.event.trigger(mapRef, 'resize');
+			}
+
+		</script>
+
+	</body>
+</html>
