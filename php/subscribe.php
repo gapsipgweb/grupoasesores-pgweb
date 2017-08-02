@@ -14,17 +14,29 @@ if (isset($_POST['email'])) {
 	exit;
 }
 
-
+//added to test mailchimp Camilo
 function subscribe($email) {
-	$MailChimp = new \Drewm\MailChimp('734bbf0e231bc8b7db0c6e85c3c30440-us7');
+	$MailChimp = new \Drewm\MailChimp('ffb0a15e1e4322a2fbc9436bb37de9ad-us16');
 	$result = $MailChimp->call('lists/subscribe', array(
-                'id'                => '0714612f99',
+                'id'                => '8d4d7c6c77',
                 'email'             => array('email'=>$email),
                 'double_optin'      => false,
                 'update_existing'   => true,
                 'replace_interests' => false,
                 'send_welcome'      => false,
             ));
+
+//as it was whit gapsi subscription
+// function subscribe($email) {
+// 	$MailChimp = new \Drewm\MailChimp('734bbf0e231bc8b7db0c6e85c3c30440-us7');
+// 	$result = $MailChimp->call('lists/subscribe', array(
+//                 'id'                => '0714612f99',
+//                 'email'             => array('email'=>$email),
+//                 'double_optin'      => false,
+//                 'update_existing'   => true,
+//                 'replace_interests' => false,
+//                 'send_welcome'      => false,
+//             ));
 
 	if ( isset($result['status']) && !(stripos($result['status'],'error')=== false)) {
 		header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
