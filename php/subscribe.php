@@ -18,7 +18,7 @@ if (isset($_POST['email'])) {
 function subscribe($email) {
 	$MailChimp = new \Drewm\MailChimp('ffb0a15e1e4322a2fbc9436bb37de9ad-us16');
 	$result = $MailChimp->call('lists/subscribe', array(
-                'id'                => '8d4d7c6c77',
+                'id'                => 'ceb7c5105f',
                 'email'             => array('email'=>$email),
                 'double_optin'      => false,
                 'update_existing'   => true,
@@ -26,7 +26,7 @@ function subscribe($email) {
                 'send_welcome'      => false,
             ));
 
-//as it was whit gapsi subscription
+//as it was whit mailchimp gapsi 
 // function subscribe($email) {
 // 	$MailChimp = new \Drewm\MailChimp('734bbf0e231bc8b7db0c6e85c3c30440-us7');
 // 	$result = $MailChimp->call('lists/subscribe', array(
