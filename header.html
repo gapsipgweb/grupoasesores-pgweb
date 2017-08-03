@@ -1,4 +1,13 @@
 <header id="header" class="narrow" data-plugin-options='{"alwaysStickyEnabled": true, "stickyEnabled": true, "stickyWithGap": false, "stickyChangeLogoSize": false}'>
+//Script para bajar de manera lenta al footer
+<script type="text/javascript">
+$('a[href*=#]').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 900);
+    event.preventDefault();
+});
+</script>
 
 				<div class="container">
 
@@ -26,7 +35,7 @@
 						<ul class="social-icons">
 							<li class="facebook"><a href="https://www.facebook.com/pages/GAPSI-Integraci%C3%B3n/460009750766668?ref=hl" target="_blank" title="Facebook">Facebook</a></li>
 							<li class="twitter"><a href="https://twitter.com/GAPSIntegracion" target="_blank" title="Twitter">Twitter</a></li>
-							<li class="linkedin"><a href="https://www.linkedin.com/profile/view?id=210430877&trk=nav_responsive_tab_profile" target="_blank" title="Linkedin">Linkedin</a></li>
+							<li class="linkedin"><a href="https://www.linkedin.com/company/grupo-de-asesores-profesionales-en-servicios-de-integraci-n-s.a.-de-c.v." target="_blank" title="Linkedin">Linkedin</a></li>
 						</ul>
                         
                         
@@ -74,11 +83,9 @@
 								</li>-->
 								<li>
 									
-									<a class="disable" href="#footer">
+									<a href="#footer">
 									Contacto
 
-
-										
 										<!--<i class="fa fa-angle-down"></i>
 									</a>
 									<ul class="dropdown-menu">
