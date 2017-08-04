@@ -1,13 +1,13 @@
 <header id="header" class="narrow" data-plugin-options='{"alwaysStickyEnabled": true, "stickyEnabled": true, "stickyWithGap": false, "stickyChangeLogoSize": false}'>
 
-<script type="text/javascript">
+<script>
 //Script para bajar de manera lenta al footer
-$('a[href*=#]').click(function(){
+$('a[href*=#]').click(function(event){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 900);
     event.preventDefault();
-});
+	});
 </script>
 
 				<div class="container">
@@ -46,7 +46,7 @@ $('a[href*=#]').click(function(){
 									<a href="index.html">Inicio</a>
 							  </li>
 							  <li class="dropdown">
-									<a class="dropdown-toggle" href="#" data-toggle="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown">
 										Nosotros
 										<i class="fa fa-angle-down"></i>
 									</a>
