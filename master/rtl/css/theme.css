@@ -2902,7 +2902,7 @@ html.boxed .body {
 	border-top: 5px solid #CCC;
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 	margin: 25px auto;
-	max-width: 1200px;
+	max-width: 980px;
 	height: auto;
 }
 
@@ -2916,7 +2916,7 @@ html.boxed body.sticky-menu-active #header {
 }
 
 /* Responsive */
-@media (max-width: 991px) {
+@media (max-width: 980px;) {
 	html.boxed .body {
 		margin: 0 auto;
 		-webkit-border-radius: 0;

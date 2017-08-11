@@ -301,6 +301,8 @@
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0);
 	background-repeat: repeat-x;
 	border-color: #b2dba1;
+	position:relative;
+	max-width: 980px;
 }
 .alert-info {
 	background-image: -webkit-linear-gradient(top, #d9edf7 0%, #b9def0 100%);

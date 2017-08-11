@@ -2914,8 +2914,9 @@ html.boxed .body {
 	border-top: 5px solid #CCC;
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 	margin: 25px auto;
-	max-width: 1200px;
+	max-width: 980px;
 	height: auto;
+	position:relative;
 }
 
 html.boxed #header {
